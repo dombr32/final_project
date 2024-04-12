@@ -149,7 +149,9 @@ body{
 }
 
 .container-head .head-content .head-btn{
-    display: flex;
+    display: grid;
+    grid-template-columns: 122px 140px;
+    column-gap: 16px;
     justify-content: center;
 }
 
@@ -162,7 +164,6 @@ body{
     line-height: 156%;
     color: #FFFFFF;
     text-decoration: none;
-    margin-right: 16px;
     transition: 0.8s;
 }
 
@@ -206,8 +207,7 @@ body{
 
 .about .about-top .about-top-item-top{
     text-align: center;
-    margin-left: 312px;
-    margin-right: 312px;
+    margin: 0 auto;
     width: 592px;
 }
 
@@ -262,8 +262,7 @@ body{
 .about .about-bottom .about-values{
     width: 592px;
     text-align: center;
-    margin-left: 312px;
-    margin-right: 312px;
+    margin: 0 auto;
 }
 
 .about .about-bottom .about-values h2{
@@ -350,6 +349,21 @@ body{
     .container-head .burger{
         display: inline;
         justify-self: flex-end;
+    }
+
+    .container-about{
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .about .about-top{
+        margin-bottom: 65px;
+    }
+
+    .about .about-bottom .about-values-items{
+        grid-template-columns: 48% 48%;
+        column-gap: 4%;
+        row-gap: 32px;
     }
 }
 

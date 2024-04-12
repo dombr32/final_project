@@ -1,0 +1,143 @@
+/*container projects*/
+.projects {
+  padding-top: 192px;
+  padding-bottom: 192px;
+  margin: 0 auto;
+}
+.projects .projects-description {
+  text-align: center;
+  width: 592px;
+  margin: 0 auto;
+}
+.projects .projects-description h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #101828;
+}
+.projects .projects-description p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #667085;
+  padding-top: 16px;
+  padding-bottom: 48px;
+}
+.projects .projects-description .projecs-btn {
+  justify-content: center;
+  /*eror*/
+}
+.projects .projects-description .projecs-btn button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+  color: #344054;
+}
+.projects .projects-items {
+  padding-top: 48px;
+  padding-bottom: 64px;
+  display: grid;
+  grid-template-columns: 592px 592px;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  grid-template-rows: 614px 614px;
+  row-gap: 64px;
+}
+.projects .projects-items .btn-type1 {
+  padding-top: 26px;
+  padding-bottom: 14px;
+  display: flex;
+}
+.projects .projects-items .btn-type1 .btn1 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #DC6803;
+  border: 1px solid #FEDF89;
+  border-radius: 16px;
+  padding: 2px 10px;
+  width: 94px;
+  background-color: #fffaeb;
+}
+.projects .projects-items .btn-type1 .btn2 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #079455;
+  margin-left: 8px;
+  margin-right: 8px;
+  border: 1px solid #A9EFC5;
+  border-radius: 16px;
+  padding: 2px 10px;
+  width: 65px;
+  background-color: #ecfdf3;
+}
+.projects .projects-items .btn-type1 .btn3 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #475467;
+  border: 1px solid #EAECF0;
+  border-radius: 16px;
+  padding: 2px 10px;
+  width: 51px;
+  background-color: #f9fafb;
+}
+.projects .projects-items .btn-type2 {
+  padding-top: 26px;
+  padding-bottom: 14px;
+  display: flex;
+}
+.projects .projects-items .btn-type2 .btn1 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #306ED4;
+  border: 1px solid #B1CDFB;
+  border-radius: 12px;
+  padding: 2px 10px;
+  width: 54px;
+  background-color: #ebf2fe;
+}
+.projects .projects-items .btn-type2 .btn2 {
+  margin-left: 8px;
+  margin-right: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #D92D20;
+  border: 1px solid #FECDC9;
+  border-radius: 16px;
+  padding: 2px 10px;
+  width: 49px;
+  background-color: #fef3f2;
+}
+.projects .projects-items .btn-type2 .btn3 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #079455;
+  border: 1px solid #A9EFC5;
+  border-radius: 16px;
+  padding: 2px 10px;
+  width: 65px;
+  background-color: #ecfdf3;
+}
+.projects .projects-items h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #101828;
+}
+.projects .projects-items p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #667085;
+}
+.projects .projects-btn {
+  text-align: center;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
