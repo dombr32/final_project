@@ -115,7 +115,6 @@ body{
     line-height: 143%;
     text-align: center;
     color: #306ED4;
-    width: 273px;
     display: inline-block;
     background-color: #EBF2FE;
     margin-bottom: 24px;
@@ -197,6 +196,8 @@ body{
     background-color: #F9FAFB;
     padding-top: 128px;
     padding-bottom: 128px;
+    border-bottom: 1px solid #eaecf0;
+    border-top: 1px solid #eaecf0;
 }
 
 .about .about-top{

@@ -1,14 +1,25 @@
+@mixin onlylarge($w){
+    @media only screen and (max-width: $w){
+        @content
+    }
+}
+
+
 /*container projects*/
 
 .projects{
     padding-top: 192px;
     padding-bottom: 192px;
     margin: 0 auto;
+    @include onlylarge(768px){padding-top: 96px; padding-bottom: 96px}
+
 
     .projects-description{
         text-align: center;
         width: 592px;
         margin: 0 auto;
+        @include onlylarge(600px){width: auto}
+        @include onlylarge(440px){text-align: center;}
 
         h2{
             font-weight: 600;
@@ -16,6 +27,7 @@
             line-height: 125%;
             letter-spacing: -0.02em;
             color: #101828;
+            @include onlylarge(768px){font-size: 32px}
         }
         p{
             font-weight: 400;
@@ -24,12 +36,12 @@
             color: #667085;
             padding-top: 16px;
             padding-bottom: 48px;
+            @include onlylarge(768px){font-size: 14px}
         }
         .projecs-btn{
             justify-content: center;
-            
             /*eror*/
-            button{
+            .projects-btn-text{
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 143%;
@@ -46,6 +58,23 @@
         column-gap: 32px;
         grid-template-rows: 614px 614px;
         row-gap: 64px;
+
+        @include onlylarge(1290px){
+            grid-template-columns: 49% 49%;
+            column-gap: 2%;
+            row-gap: 2%;
+        }
+        @include onlylarge(768px){grid-template-rows: 48% 48%; row-gap: 4%;}
+        @include onlylarge(480px){
+            grid-template-columns: 90%; 
+            justify-content: center; 
+            grid-template-rows: auto; 
+            row-gap: 24px;
+        }
+
+        img{
+            max-width: 100%;
+        }
 
         .btn-type1{
             padding-top: 26px;
@@ -135,6 +164,123 @@
             line-height: 150%;
             letter-spacing: -0.02em;
             color: #101828;
+            @include onlylarge(768px){font-size: 18px}
+        }
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #667085;
+            @include onlylarge(768px){font-size: 14px}
+        }
+    }
+    .projects-btn{
+        text-align: center;
+        cursor: pointer;
+        
+        a{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 156%;
+
+        span{
+            margin-left: 15px;
+        }
+    }
+    }
+}
+
+
+/*Container technologies*/
+
+.container-technologies{
+    background-color: #F9FAFB;
+    padding-top: 128px;
+    padding-bottom: 128px;
+    border-bottom: 1px solid #eaecf0;
+    border-top: 1px solid #eaecf0;
+    @include onlylarge(768px){padding-top: 64px; padding-bottom: 64px;}
+    @include onlylarge(390px){padding-top: 48px; padding-bottom: 48px;}
+
+    .technologies-description{
+        width: 592px;
+        margin: 0 auto;
+        text-align: center;
+        @include onlylarge(620px){width: auto;}
+
+        h2{
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 125%;
+            letter-spacing: -0.02em;
+            color: #101828;
+            margin-bottom: 16px;
+            @include onlylarge(768px){font-size: 32px;}
+            @include onlylarge(390px){font-size: 24px;}
+        }
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            text-align: center;
+            color: #667085;
+            margin-bottom: 48px;
+            @include onlylarge(768px){margin-bottom: 40px; font-size: 14px;}
+            @include onlylarge(390px){margin-bottom: 32px;}
+        }
+    }
+
+    .technologies-items{
+        padding-top: 48px;
+        display: grid;
+        grid-template-columns: repeat(6, 182px);
+        justify-content: center;
+        column-gap: 24px;
+        row-gap: 24px;
+        @include onlylarge(1390px){grid-template-columns: repeat(6, 15%); column-gap: 2%}
+        @include onlylarge(768px){grid-template-columns: repeat(4, 24%); column-gap: 3%; padding-top: 40px;}
+        @include onlylarge(390px){grid-template-columns: repeat(3, 32%); column-gap: 2%; padding-top: 32px;}
+
+        div{
+            text-align: center;
+            border: 1px solid var(--gray-200);
+            border-radius: 10px;
+            background-color: #FFFFFF;
+
+            img{
+                max-width: 100%;
+                padding-top: 32px;
+                padding-bottom: 20px;
+            }
+            p{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 150%;
+                color: #101828;
+                padding-bottom: 24px;
+                @include onlylarge(390px){font-size: 12px;}
+            }
+        }
+    }
+}
+
+
+/*Container Team*/
+.container-team{
+    padding-top: 192px;
+    padding-bottom: 192px;
+    background: url(../images/team-background.png);
+
+    .team-description{
+        text-align: center;
+
+        h2{
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 125%;
+            letter-spacing: -0.02em;
+            color: #101828;
+            padding-bottom: 16px;
         }
         p{
             font-weight: 400;
@@ -143,8 +289,59 @@
             color: #667085;
         }
     }
-    .projects-btn{
+
+    .team-items{
+        padding-top: 48px;
+        padding-bottom: 64px;
+        display: grid;
+        grid-template-columns: repeat(4, 24%);
+        column-gap: 2%;
+        row-gap: 24px;
+
+        .team-item1, .team-item2, .team-item3, .team-item4, .team-item5, .team-item6, .team-item7, .team-item8{
+            border: 1px solid #eaecf0;
+            border-radius: 12px;
+            padding: 32px 24px;
+            background-color: #fcfcfd;
+            text-align: center;
+
+            >img{
+                margin-bottom: 20px;
+            }
+
+            h3{
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 150%;
+                letter-spacing: -0.02em;
+                color: #101828;
+            }
+
+            p{
+                font-size: 16px;
+                line-height: 150%;
+                color: #667085;
+                margin-bottom: 20px;
+            }
+
+            a{
+                font-weight: 500;
+                font-size: 16px;
+                color: #3B82F6;
+                text-decoration: none;
+
+                img{
+                    margin-left: 11px;
+                }
+            }
+        }
+    }
+
+    .team-btn{
         text-align: center;
-        cursor: pointer;
+
+        span{
+            margin-left: 15px;
+        }
     }
 }
