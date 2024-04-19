@@ -177,6 +177,8 @@
     .projects-btn{
         text-align: center;
         cursor: pointer;
+
+        @include onlylarge(450px){display: none;}
         
         a{
         font-weight: 600;
@@ -207,6 +209,10 @@
         margin: 0 auto;
         text-align: center;
         @include onlylarge(620px){width: auto;}
+
+        .projects-btn{
+            @include onlylarge(450px){display: none;}
+        }
 
         h2{
             font-weight: 600;
@@ -271,6 +277,8 @@
     padding-bottom: 192px;
     background: url(../images/team-background.png);
 
+    @include onlylarge(768px){padding-top: 96px; padding-bottom: 96px;}
+
     .team-description{
         text-align: center;
 
@@ -281,12 +289,16 @@
             letter-spacing: -0.02em;
             color: #101828;
             padding-bottom: 16px;
+
+            @include onlylarge(768px){font-size: 32px;}
         }
         p{
             font-weight: 400;
             font-size: 16px;
             line-height: 150%;
             color: #667085;
+
+            @include onlylarge(768px){font-size: 14px;}
         }
     }
 
@@ -297,6 +309,19 @@
         grid-template-columns: repeat(4, 24%);
         column-gap: 2%;
         row-gap: 24px;
+
+        @include onlylarge(905px){
+            grid-template-columns: 30% 30% 30%;
+            justify-content: center;
+            padding-top: 40px;
+        }
+        @include onlylarge(700px){
+            grid-template-columns: 49% 49%;
+        }
+
+        @include onlylarge(700px){
+            grid-template-columns: 100%;
+        }
 
         .team-item1, .team-item2, .team-item3, .team-item4, .team-item5, .team-item6, .team-item7, .team-item8{
             border: 1px solid #eaecf0;
@@ -315,6 +340,8 @@
                 line-height: 150%;
                 letter-spacing: -0.02em;
                 color: #101828;
+
+                @include onlylarge(768px){font-size: 18px;}
             }
 
             p{
@@ -332,6 +359,10 @@
 
                 img{
                     margin-left: 11px;
+                }
+
+                span{
+                    @include onlylarge(720px){display: none;}
                 }
             }
         }
