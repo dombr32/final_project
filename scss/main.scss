@@ -376,3 +376,190 @@
         }
     }
 }
+
+/*Container clients*/
+
+.container-clients{
+    border-bottom: 1px solid #eaecf0;
+    border-top: 1px solid #eaecf0;
+    padding-top: 128px;
+    padding-bottom: 128px;
+
+    .clients-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2{
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 125%;
+            letter-spacing: -0.02em;
+            color: #101828;
+        }
+
+        .arrows{
+            @include onlylarge(600px){display: none;}
+        
+            .left{
+                margin-right: 12px;
+            }
+        }    
+    }
+
+    .clients-items{
+        padding-top: 48px;
+        display: flex;
+        justify-content: space-between;
+
+        @include onlylarge(768px){width: auto;
+            overflow-y: scroll;}
+        
+
+        .clients-item1, .clients-item2, .clients-item3{
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            width: 384px;
+            background: #fff;
+            padding: 32px 24px 52px 24px;
+
+            @include onlylarge(768px){margin-right: 24px; overflow: visible;}
+
+            .client{
+                display: flex;
+                align-items: center;
+
+                div{
+                    margin-left: 16px;
+                    h3{
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 150%;
+                        color:#0c111d;
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 143%;
+                        color: #667085;
+                    }
+                }
+            }
+
+            .review{
+                padding-top: 32px;
+
+                p{
+                    padding-top: 16px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 143%;
+                    color: #667085;
+                }
+            }
+        }
+    }
+}
+
+/*Contact Us*/
+
+.contact-us{
+    padding-top: 192px;
+    padding-bottom: 192px;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    column-gap: 2%;
+
+    @include onlylarge(768px){padding-top: 96px;
+        padding-bottom: 96px;
+        grid-template-columns: 100%;}
+    
+    @include onlylarge(390px){padding-top: 64px;
+            padding-bottom: 64px;}
+    
+    .contacts{
+        @include onlylarge(768px){margin-bottom: 40px;}
+
+        h2{
+            padding-top: 32px;
+            padding-bottom: 16px;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 125%;
+            letter-spacing: -0.02em;
+            color: #101828;
+
+            @include onlylarge(768px){font-size: 32px;}
+            @include onlylarge(390px){font-size: 24px;}
+        }
+
+        p{
+            font-size: 16px;
+            line-height: 150%;
+            color: #667085;
+            padding-bottom: 48px;
+
+            @include onlylarge(390px){font-size: 14px;}
+        }
+
+        a{
+            font-size: 16px;
+            line-height: 150%;
+            color: #101828;
+            margin-bottom: 24px;
+            display: inline-block;
+            width: 100%;
+            height: 24px;
+            text-decoration: none;
+
+            @include onlylarge(390px){font-size: 14px;}
+
+            img{
+                margin-right: 19px;
+            }
+        }
+
+        .social-links{
+            margin-top: 24px;
+
+            @include onlylarge(768px){display: none;}
+        }
+    }
+
+    form{
+        border: 1px solid #eaecf0;
+        border-radius: 16px;    
+        background: #f9fafb;
+        padding: 32px;
+
+        input{
+            width: 100%;
+        }
+
+        textarea{
+            width: 100%;
+            height: 120px;
+        }
+
+        .name{
+            display: flex;
+            justify-content: space-between;
+            div{ width: 47%;}
+        }
+
+        p{
+            margin-bottom: 8px;
+            margin-top: 24px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 143%;
+            color: #101828;
+        }
+
+        .form-btn{
+            margin-top: 24px;
+            button{
+                width: 100%;
+            }
+        }
+    }
+}

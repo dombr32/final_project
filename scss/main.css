@@ -456,4 +456,202 @@
 }
 .container-team .team-btn span {
   margin-left: 15px;
+}
+
+/*Container clients*/
+.container-clients {
+  border-bottom: 1px solid #eaecf0;
+  border-top: 1px solid #eaecf0;
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+.container-clients .clients-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-clients .clients-top h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #101828;
+}
+@media only screen and (max-width: 600px) {
+  .container-clients .clients-top .arrows {
+    display: none;
+  }
+}
+.container-clients .clients-top .arrows .left {
+  margin-right: 12px;
+}
+.container-clients .clients-items {
+  padding-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 768px) {
+  .container-clients .clients-items {
+    width: auto;
+    overflow-y: scroll;
+  }
+}
+.container-clients .clients-items .clients-item1, .container-clients .clients-items .clients-item2, .container-clients .clients-items .clients-item3 {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  width: 384px;
+  background: #fff;
+  padding: 32px 24px 52px 24px;
+}
+@media only screen and (max-width: 768px) {
+  .container-clients .clients-items .clients-item1, .container-clients .clients-items .clients-item2, .container-clients .clients-items .clients-item3 {
+    margin-right: 24px;
+    overflow: visible;
+  }
+}
+.container-clients .clients-items .clients-item1 .client, .container-clients .clients-items .clients-item2 .client, .container-clients .clients-items .clients-item3 .client {
+  display: flex;
+  align-items: center;
+}
+.container-clients .clients-items .clients-item1 .client div, .container-clients .clients-items .clients-item2 .client div, .container-clients .clients-items .clients-item3 .client div {
+  margin-left: 16px;
+}
+.container-clients .clients-items .clients-item1 .client div h3, .container-clients .clients-items .clients-item2 .client div h3, .container-clients .clients-items .clients-item3 .client div h3 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #0c111d;
+}
+.container-clients .clients-items .clients-item1 .client div p, .container-clients .clients-items .clients-item2 .client div p, .container-clients .clients-items .clients-item3 .client div p {
+  font-size: 14px;
+  line-height: 143%;
+  color: #667085;
+}
+.container-clients .clients-items .clients-item1 .review, .container-clients .clients-items .clients-item2 .review, .container-clients .clients-items .clients-item3 .review {
+  padding-top: 32px;
+}
+.container-clients .clients-items .clients-item1 .review p, .container-clients .clients-items .clients-item2 .review p, .container-clients .clients-items .clients-item3 .review p {
+  padding-top: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #667085;
+}
+
+/*Contact Us*/
+.contact-us {
+  padding-top: 192px;
+  padding-bottom: 192px;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  -moz-column-gap: 2%;
+       column-gap: 2%;
+}
+@media only screen and (max-width: 768px) {
+  .contact-us {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    grid-template-columns: 100%;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .contact-us {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-us .contacts {
+    margin-bottom: 40px;
+  }
+}
+.contact-us .contacts h2 {
+  padding-top: 32px;
+  padding-bottom: 16px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #101828;
+}
+@media only screen and (max-width: 768px) {
+  .contact-us .contacts h2 {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .contact-us .contacts h2 {
+    font-size: 24px;
+  }
+}
+.contact-us .contacts p {
+  font-size: 16px;
+  line-height: 150%;
+  color: #667085;
+  padding-bottom: 48px;
+}
+@media only screen and (max-width: 390px) {
+  .contact-us .contacts p {
+    font-size: 14px;
+  }
+}
+.contact-us .contacts a {
+  font-size: 16px;
+  line-height: 150%;
+  color: #101828;
+  margin-bottom: 24px;
+  display: inline-block;
+  width: 100%;
+  height: 24px;
+  text-decoration: none;
+}
+@media only screen and (max-width: 390px) {
+  .contact-us .contacts a {
+    font-size: 14px;
+  }
+}
+.contact-us .contacts a img {
+  margin-right: 19px;
+}
+.contact-us .contacts .social-links {
+  margin-top: 24px;
+}
+@media only screen and (max-width: 768px) {
+  .contact-us .contacts .social-links {
+    display: none;
+  }
+}
+.contact-us form {
+  border: 1px solid #eaecf0;
+  border-radius: 16px;
+  background: #f9fafb;
+  padding: 32px;
+}
+.contact-us form input {
+  width: 100%;
+}
+.contact-us form textarea {
+  width: 100%;
+  height: 120px;
+}
+.contact-us form .name {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-us form .name div {
+  width: 47%;
+}
+.contact-us form p {
+  margin-bottom: 8px;
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #101828;
+}
+.contact-us form .form-btn {
+  margin-top: 24px;
+}
+.contact-us form .form-btn button {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
