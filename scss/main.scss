@@ -385,6 +385,9 @@
     padding-top: 128px;
     padding-bottom: 128px;
 
+    @include onlylarge(768px){padding-top: 64px; padding-bottom: 64px;}
+    @include onlylarge(390px){padding-top: 48px; padding-bottom: 48px;}
+
     .clients-top{
         display: flex;
         justify-content: space-between;
@@ -396,6 +399,9 @@
             line-height: 125%;
             letter-spacing: -0.02em;
             color: #101828;
+
+            @include onlylarge(768px){font-size: 32px;}
+            @include onlylarge(390px){font-size: 24px;}
         }
 
         .arrows{
@@ -414,6 +420,8 @@
 
         @include onlylarge(768px){width: auto;
             overflow-y: scroll;}
+
+        @include onlylarge(390px){padding-top: 34px;}
         
 
         .clients-item1, .clients-item2, .clients-item3{
@@ -543,7 +551,9 @@
         .name{
             display: flex;
             justify-content: space-between;
-            div{ width: 47%;}
+            @include onlylarge(390px){display: block;}
+                div{ width: 47%;
+                @include onlylarge(390px){width: 100%;}}
         }
 
         p{
@@ -561,5 +571,73 @@
                 width: 100%;
             }
         }
+    }
+}
+
+/*Footer*/
+
+footer{
+    border-top: 1px solid #eaecf0;
+    background: #f9fafb;
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    @include onlylarge(768px){padding-top: 48px; padding-bottom: 48px;}
+    @include onlylarge(390px){padding-top: 32px; padding-bottom: 32px;}
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 32px;
+        align-items: center;
+        
+        @include onlylarge(575px){align-items: normal;}
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+
+            li{
+                margin-right: 24px;
+
+                a{
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 143%;
+                    color: #344054;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .btn {
+            border-radius: 8px;
+            padding: 8px;
+            background-color: #3B82F6;
+            color: #fff;
+
+            &:hover{
+                border: solid 1px black;
+            }
+        }
+    }
+    img{
+        max-width: 100%;
+    }
+
+    .footer-info{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 32px;
+        align-items: center;
+        flex-wrap: wrap;
+
+        p{
+            font-size: 14px;
+            line-height: 143%;
+            color: #667085;
+            @include onlylarge(436px){padding-top: 24px;}
+        }
+
     }
 }
