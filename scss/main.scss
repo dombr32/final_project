@@ -21,6 +21,10 @@
         @include onlylarge(600px){width: auto}
         @include onlylarge(440px){text-align: center;}
 
+        .projects-btns{
+            @include onlylarge(450px){display: none;}
+        }
+
         h2{
             font-weight: 600;
             font-size: 48px;
@@ -177,8 +181,6 @@
     .projects-btn{
         text-align: center;
         cursor: pointer;
-
-        @include onlylarge(450px){display: none;}
         
         a{
         font-weight: 600;
@@ -640,4 +642,237 @@ footer{
         }
 
     }
+}
+
+
+
+
+/*Projects pages*/
+
+.projects-pages{
+    padding-top: 124px;
+    padding-bottom: 124px;
+    @include onlylarge(768px){padding-top: 80px;
+        padding-bottom: 96px;}
+
+    .pages-pagination{
+        border-top: 1px solid #eaecf0;
+        padding-top: 32px;
+        ul{justify-content: center;}
+    }
+}
+
+
+
+
+/*Project page*/
+
+.container-first{
+
+    .head-content{
+        padding-top: 48px;
+        padding-bottom: 48px;
+
+        @include onlylarge(768px){padding-top: 32px; padding-bottom: 40px;}
+        @include onlylarge(390px){padding-top: 24px; padding-bottom: 32px;}
+
+        a{
+            border-radius: 8px;
+            border: 1px solid #d0d5dd;
+            background: #fff;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 143%;
+            color: #344054;
+            padding: 8px;
+            text-decoration: none;
+
+            img{
+                margin-right: 10px;
+            }
+        }
+
+        h2{
+            padding-top: 40px;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 125%;
+            letter-spacing: -0.02em;
+            color: #101828;
+
+            @include onlylarge(768px) {padding-top: 20px; font-size: 32px;}
+            @include onlylarge(390px) {font-size: 24px;}
+        }
+    }
+    
+}
+
+
+.project-content{
+    padding-bottom: 192px;
+    padding-top: 48px;
+    border-top: 1px solid #eaecf0;
+    display: flex;
+    justify-content: space-between;
+
+    @include onlylarge(768px){padding-top: 0;}
+    @include onlylarge(390px){padding-bottom: 64px;}
+
+    menu{
+        margin-left: 72px;
+        @include onlylarge(768px){display: none}
+
+        li{
+            margin-bottom: 4px;
+            width: 208px;
+            height: 36px;
+            
+            a{
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 143%;
+                color: #667085;
+                text-decoration: none;
+                padding-left: 12px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+
+                &:hover{
+                    border-left: 2px solid #3b82f6;
+                    color: #3b82f6;
+                }
+            }
+
+        }
+    }
+
+    h3{
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 125%;
+        letter-spacing: -0.02em;
+        color: #101828;
+        padding-top: 48px;
+
+        @include onlylarge(768px){font-size: 24px; padding-top: 40px;}
+        @include onlylarge(390px){font-size: 20px; padding-top: 32px;}
+    }
+
+    p{
+        font-size: 16px;
+        line-height: 150%;
+        color: #475467;
+        padding-top: 24px;
+        padding-bottom: 48px;
+
+        @include onlylarge(768px){font-size: 14px; padding-bottom: 40px}
+        @include onlylarge(390px){font-size: 14px; padding-bottom: 32px}
+    }
+
+    h4{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 133%;
+        letter-spacing: -0.02em;
+        color: #101828;
+
+        @include onlylarge(768px){font-size: 20px}
+        @include onlylarge(390px){font-size: 18px}
+    }
+
+    .main{
+        border-bottom: 1px solid #eaecf0;
+    }
+
+    img{
+        max-width: 100%;
+        padding-bottom: 64px;
+    }
+
+    .results{
+        border: 0;
+
+        .statistic{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-top: 24px;
+
+
+            .center-item{
+                margin-left: 20px;
+                margin-right: 20px;
+
+                @include onlylarge(542px){margin-bottom: 16px;}
+                @include onlylarge(390px){margin-left: 0px; margin-right: 0px;}
+            }
+
+            h4{
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 125%;
+                letter-spacing: -0.02em;
+                color: #101828;
+                margin: 0;
+
+                @include onlylarge(768px){font-size: 32px;}
+                @include onlylarge(390px){font-size: 24px;}
+            }
+
+            p{
+                font-size: 16px;
+                line-height: 150%;
+                color: #98a2b3;
+                padding: 0;
+
+                @include onlylarge(768px){font-size: 14px;}
+                @include onlylarge(390px){font-size: 12px;}
+            }
+        }
+
+        .results-items{
+            display: grid;
+            grid-template-columns: 23% 23% 23% 23%;
+            column-gap: 2%;
+            row-gap: 20px;
+            padding-top: 24px;
+            padding-bottom: 48px;
+
+            @include onlylarge(768px){grid-template-columns: 31% 31% 31%;
+                column-gap: 3%; padding-top: 24px; padding-bottom: 40px;}
+            @include onlylarge(390px){grid-template-columns: 49% 49%;
+                column-gap: 2%; padding-top: 16px; padding-bottom: 32px;}
+            
+
+            h6{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 150%;
+                color: #182230;
+
+                @include onlylarge(390px){font-size: 14px;}
+            }
+
+            p{
+                font-size: 14px;
+                line-height: 143%;
+                color: #98a2b3;
+                padding: 0;
+            }
+        }
+    }
+}
+
+
+
+/*Team page*/
+
+.team-page{
+    padding-top: 76px;
+    padding-bottom: 192px;
+    background: none;
+    @include onlylarge(768px){padding-top: 80px;
+        padding-bottom: 96px;}
+
+    
 }

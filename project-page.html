@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="images/fav-logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    
+    <header class="center">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html#about">About us</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li class="contact-btn"><a href="#contactUs">Contact us</a></li>
+            </ul>
+        </nav>    
+        <div class="burger">
+            <img src="images/burger.png" alt="burger">
+        </div>
+        
+    </header>
+
+    <section class="container-first center">
+        <div class="head-content">   
+            <a href="projects.html"><img src="images/arrow-left.png" alt="arrow-left">Back to projects</a>
+            <h2>Healthcare CRM software: 14% reduction in administrative costs</h2>
+        </div> 
+    </section>
+
+    <section class="project-content center">
+        <div class="content">
+            <div class="project-overview main" id="project-overview">
+                <h3>Project Overview</h3>
+                <p>Our customer is a European healthcare provider rendering technology-driven care and biomedical research with 
+                    5000+ employees on board. With modern equipment and professional staff, they provide personalized, 
+                    high-quality medical treatment through a vast network of hospitals and clinics.
+                    Detailed information about the client cannot be disclosed under the provisions of the NDA.</p>
+            </div>
+            <div class="challenge main" id="challenge">
+                <h3>Challenge</h3>
+                <p>Challenges with CRM data migration across EHRs, billing systems and legacy databases
+                    Our customer, a multi-speciality healthcare provider with dozens of branches across Europe, 
+                    faced challenges in consolidating patient information and streamlining medical processes. 
+                    Despite their business growth, they struggled to maintain data quality and consistency, failing to 
+                    integrate proprietary CRM with external sources, provide better patient care, and improve hospital staff work.
+                    In particular, medical data was spread across electronic health records (EHRs), billing systems, and legacy
+                     databases, resulting in information silos and difficulty accessing patient records. Also, their customer
+                    relationship management software lacked many useful features, such as appointment scheduling, tracking
+                    patient visits, and billing. Therefore, accessing the customer’s obsolete CRM was time-consuming and cumbersome,
+                    negatively impacting patient satisfaction and operational efficiency.</p>
+            </div>
+            <div class="solution main" id="solution">
+                <h3>Solution</h3>
+                <p>Implementing Microsoft Dynamics CRM in the healthcare industry
+                    Innowise replaced the customer’s legacy CRM with a centralized repository, providing an all-around migration of patient information, documents, tasks, activities, and key metrics to Microsoft Dynamics 365. We employed Microsoft CRM to create a unified system for storing and managing patient information, including demographic data, medical history, and treatment plans. Additionally, our software engineers implemented functionality to schedule appointments, track patient visits, and manage billing and insurance. Our team also integrated Microsoft Dynamics 365 with external services and systems, such as electronic medical records and laboratory results, to deliver a comprehensive view of a patient’s care throughout the healthcare pipeline.
+                    Thus, we customized a HIPAA-compliant, feature-rich CRM system for storing and managing medical data, identifying patterns and trends (patient demographics, readmission/mortality rates, resource utilization, etc.), and providing robust reporting and analytics functions to assist physicians in making informed decisions and improving patient care.
+                    Within the healthcare CRM solution, we implemented the following user roles:
+                    Administrator is responsible for managing user accounts, providing access, setting up security protocols, and configuring the CRM to meet the needs of medical staff.
+                    Medical staff who access and edit patient information, conduct examinations, prescribe treatment, and produce analytical reports for administrative purposes.
+                    Billing & insurance staff who manage billing information and generate invoices and statements.
+                    Receptionists are responsible for scheduling appointments, managing patient visits, handling cancellations, 
+                    and dealing with no-shows.</p>
+                <h4>Patient profiles</h4>
+                <p>We first consolidated all patient-related information in one place, 
+                    including personal and insurance data, patient history, scheduled appointments, treatment plans, 
+                    prescribed drugs, test results, and more. Within this module, clinicians can access patient profiles, 
+                    e-mails, pre-visit questionnaires, post-treatment surveys, confirmations, feedback, etc., reducing 
+                    administrative burdens and ensuring qualitative care.</p>
+                <img src="images/patient-profiles.png" alt="patient-profiles">
+                <h4>Appointment management</h4>
+                <p>Our project team tailored the CRM to optimize appointment scheduling based 
+                    on the availability of doctors, medical equipment, and examination rooms. Once 
+                    a new appointment is created, the CRM sends automated notifications to the patient
+                     and physician confirming the appointment and providing treatment details. Whenever
+                      an appointment slot is unavailable, or a cancellation occurs, Microsoft Dynamics
+                       365 maintains patient waitlists, automatically notifying patients about rescheduling.
+                        Also, patients receive reminders via SMS, email, or phone calls before visits, 
+                        reducing the number of no-shows and improving overall resource allocation.</p>
+                <img src="images/page-project-item2.png" alt="project-item2">
+                <p>Additionally, our CRM is equipped with priority settings, 
+                    allowing medical staff to prioritize urgent cases and ensure 
+                    critical patients receive prompt care. Following a doctor’s visit, 
+                    patients receive a link to a post-appointment survey to give feedback 
+                    about treatment quality, facility comfort, and communication with the clinician.</p>
+                <img src="images/page-project-item3.png" alt="project-item3">
+                <h4>Billing and insurance</h4>
+                <p>We integrated a CRM system with a billing option that automatically 
+                    generates and sends bills to patients for services rendered, consolidating
+                    charges from multiple visits. We ensured secure instant payments for healthcare 
+                    services without the slightest risk of financial fraud or data leakage.
+                    After a patient receives medical treatment, the customer’s administrators generate 
+                    an insurance claim, considering the services provided, diagnosis codes, and other relevant
+                     information. The Microsoft Dynamics 365 CRM then submits the claim electronically 
+                     to the insurance provider for reimbursement.</p>
+                <img src="images/page-project-item4.png" alt="project-item4">
+                <h4>Advanced analytics</h4>
+                <p>Our seasoned developers customized reports and dashboards to provide insights into patient demographics, clinical outcomes, revenue generation, and other relevant metrics, stimulating informed decisions and improving patient care.</p>
+            </div>
+            
+            <div class="process main" id="process">
+                <h3>Process</h3>
+                <p>During the discovery phase, our business analysts 
+                        worked closely with the customer’s stakeholders and healthcare 
+                        consultants to gather and document project requirements, including 
+                        understanding the patient journey, appointment scheduling, billing procedures, a
+                        nd third-party integrations. Based on this data, our developers configured Dynamics 
+                        CRM to meet the client’s needs and deliver a tailored solution. To make the system 
+                        intuitive and visually appealing, our UI/UX designers developed comprehensive interfaces
+                         allowing medical staff to handle their working routines seamlessly. Meanwhile, DevOps
+                          engineers managed the system’s deployment and provided ongoing support and maintenance,
+                           while QA specialists ensured hassle-free CRM performance, addressed arising issues, and 
+                           tested new features.
+                        Additionally, we implemented robust security measures, access controls, and encryption to safeguard 
+                        sensitive information in compliance with HIPAA and other healthcare regulations.
+                        Currently, the project is in the post-launch phase, with the customer planning to scale the Dynamics 
+                        CRM system to accommodate new clinics and hospitals.</p>
+            </div>
+            
+            <div class="results main" id="results">
+                <h3>Results</h3>
+                <div class="statistic">
+                    <div class="statistic-item">
+                        <h4>195 000+</h4>
+                        <p>total number of users</p>
+                    </div>
+                    <div class="statistic-item center-item">
+                        <h4>49 000+</h4>
+                        <p>new users after the upgrade</p>
+                    </div>
+                    <div class="statistic-item">
+                        <h4>42 000+</h4>
+                        <p>orders via mobile app</p>
+                    </div>
+                </div>
+                <p>Our solution comprises a finely tuned ensemble of features, 
+                        each strategically designed and implemented to address the client’s 
+                        unique challenges and usher in a new era of operational efficiency 
+                        and growth. Our Odoo implementation company did not just implement a 
+                        standalone ERP but underwent a multifaceted overhaul, modernizing all 
+                        aspects of the company’s marketing activities, affecting profits.</p>
+                <h4>Technologies</h4>
+                    <div class="results-items">
+                        <div class="result-item">
+                            <h6>Front-end</h6>
+                            <p>HTML, CSS, JavaScript, React, Dialogflow, Rasa</p>
+                        </div>
+                        <div class="result-item">
+                            <h6>Back-end</h6>
+                            <p>Python</p>
+                        </div>
+                        <div class="result-item">
+                            <h6>Platform</h6>
+                            <p>Odoo ecosystem</p>
+                        </div>
+                        <div class="result-item">
+                            <h6>Integration</h6>
+                            <p>Apache Kafka, RabbitMQ, Google Ads API</p>
+                        </div>
+                        <div class="result-item">
+                            <h6>Database</h6>
+                            <p>PostgreSQL</p>
+                        </div>
+                        <div class="result-item">
+                            <h6>QA</h6>
+                            <p>Selenium, JMeter, Pytest</p>
+                        </div>
+                    </div> 
+                <h4>Team</h4>
+                    <div class="results-items">
+                        <div class="result-item">
+                            <h6>Diana Alexeeva</h6>
+                            <p>Project Manager</p>
+                        </div>
+                        <div class="result-item">
+                            <h6>Artem Rybin</h6>
+                            <p>Backend Lead</p>
+                        </div>
+                        <div class="result-item">
+                            <h6>Nikita Vyaskov</h6>
+                            <p>Backend Senior</p>
+                        </div>
+                        <div class="result-item">
+                            <h6>Alexander Khiger</h6>
+                            <p>iOS Lead</p>
+                        </div>
+                        <div class="result-item">
+                            <h6>Ilgam Ayupov</h6>
+                            <p>Android Lead</p>
+                        </div>
+                        <div class="result-item">
+                            <h6>Dmitry Volkov</h6>
+                            <p>DevOps</p>
+                        </div>
+                        <div class="result-item">
+                            <h6>Nikita Opalinsky</h6>
+                            <p>UX/UI Design</p>
+                        </div>
+                    </div> 
+                    
+            </div>
+        </div>
+
+        <menu>
+            <ul>
+                <li><a href="#project-overview">Project Overview</a></li>
+                <li><a href="#challenge">Challenge</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#results">Results</a></li>
+            </ul>
+        </menu>
+    </section>
+
+
+    <footer>
+        <div class="center">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#technologies">Technologies</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+                    <a href="#contactUs" class="btn">Contact us</a>
+            </nav>
+            <img src="images/footer-line.png" alt="footer-line"> 
+            <div class="footer-info">
+                <img src="images/logo.png" alt="logo">
+                <p>© Copyright 2024. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
