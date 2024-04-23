@@ -359,7 +359,7 @@ header .menu ul li.contact-btn a{
 
     header .menu{
         min-height: 100vh;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(59, 130, 246, 0.7);
         position: fixed;
         top: 0;
         left: -100%;
@@ -380,6 +380,20 @@ header .menu ul li.contact-btn a{
     header .menu.menu-show{
         left: 0%;
     }
+
+    header .menu ul li a{
+        color: #fff;
+        font-size: 24px;
+    }
+
+    header .menu ul li.contact-btn a{
+        border-radius: 8px;
+        padding: 8px;
+        background-color: #fff;
+        color: #344054;
+        border: 1px solid #D0D5DD;
+    }
+
 
     .burger{
         display: inline;

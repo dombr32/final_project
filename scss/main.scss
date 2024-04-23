@@ -66,9 +66,10 @@
         @include onlylarge(1290px){
             grid-template-columns: 49% 49%;
             column-gap: 2%;
-            row-gap: 2%;
+            row-gap: 32px;
+            grid-template-rows: auto;
         }
-        @include onlylarge(768px){grid-template-rows: 48% 48%; row-gap: 4%;}
+        @include onlylarge(768px){grid-template-rows: auto; row-gap: 32px;}
         @include onlylarge(480px){
             grid-template-columns: 90%; 
             justify-content: center; 
@@ -651,14 +652,48 @@ footer{
 
 .projects-pages{
     padding-top: 124px;
-    padding-bottom: 124px;
+    padding-bottom: 192px;
     @include onlylarge(768px){padding-top: 80px;
         padding-bottom: 96px;}
+
+    .projects-btn{
+        @include onlylarge(440px){display: none;}
+    }
+        
+    .projects-items{
+        @include onlylarge(440px){padding-top: 0;}
+    }
 
     .pages-pagination{
         border-top: 1px solid #eaecf0;
         padding-top: 32px;
         ul{justify-content: center;}
+
+        .previous {
+            
+            
+            a{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 143%;
+                color: #98a2b3;
+                background: none;
+                border: none;
+                img{margin-right: 10px;}
+            }
+        }
+
+        .next{
+            a{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 143%;
+                color: #344054;
+                background: none;
+                border: none;
+                img{margin-left: 10px;}
+            }
+        }
     }
 }
 
